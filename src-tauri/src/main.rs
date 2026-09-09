@@ -1,3 +1,6 @@
+// Copyright (c) Akeoot / Akeoott <contact@kyanite.mov>. Licensed under the GPL-3.0 Licence.
+// See the LICENSE file in the repository root for full license text.
+
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 fn main() {
     #[cfg(target_os = "linux")]

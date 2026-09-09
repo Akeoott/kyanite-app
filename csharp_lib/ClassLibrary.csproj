@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>dotnet-backend</AssemblyName>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+
+    <PublishAot>true</PublishAot>
+    <NativeLib>Shared</NativeLib>
+    <SelfContained>true</SelfContained>
+
+    <OptimizationPreference>Speed</OptimizationPreference>
+    <TrimMode>full</TrimMode>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <InvariantGlobalization>true</InvariantGlobalization>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ZenMonitor.Core" Version="2.0.0-alpha.8" />
+    <PackageReference Include="ZenMonitor.Core.Hosting" Version="2.0.0-alpha.8" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.12" />
+    <PackageReference Include="System.IO.Abstractions" Version="22.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="bin\**;obj\**;target\**" />
+    <EmbeddedResource Remove="bin\**;obj\**;target\**" />
+    <None Remove="bin\**;obj\**;target\**" />
+  </ItemGroup>
+</Project>
