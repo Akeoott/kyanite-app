@@ -1,0 +1,4 @@
+* text=auto eol=lf
+
+**/Cargo.lock linguist-generated=true -diff
+**/package-lock.json linguist-generated=true -diff
